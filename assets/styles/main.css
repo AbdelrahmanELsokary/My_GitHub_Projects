@@ -23,19 +23,39 @@
   }
 }
 :root {
-  --txt-color: #fff;
-  --bg: #1B263B;
+  --txt-color: #1B263B;
+  --bg: #007BFF;
   --bg1: #F0F0F0;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--bg);
 }
-body.dark-mode {
+body.dark-mode , 
+body.dark-mode header .container nav ul li a
+{
   background-color: var(--txt-color);
   color: var(--bg);
   transition: 0.5s;
 }
 a {
   text-decoration: none;
+}
+header {
+  padding: 30px 0;
+}
+header .container nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container img {
+  width: 40px;
+  cursor: pointer;
+}
+header .container nav ul li a {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  color: var(--txt-color);
 }
