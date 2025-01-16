@@ -35,8 +35,8 @@ body {
 body.dark-mode , 
 body.dark-mode header .container nav ul li a
 {
-  background-color: var(--text-color);
-  color: var(--highlight-color);
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
   transition: 0.5s;
 }
 a {
@@ -63,7 +63,7 @@ header .container nav ul li a {
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.9px;
-  color: var(--text-color);
+  color: var(--highlight-color);
 }
 section .container {
   text-align: center;
@@ -95,9 +95,8 @@ section .container .user_info {
 }
 .follow {
   display: flex;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 10px;
+  gap: 15px;
+  padding: 20px;
 }
 .follow span {
   background-color: var(--highlight-color);
@@ -110,8 +109,8 @@ body.dark-mode .follow span ,
 body.dark-mode .repos_data li span ,
 body.dark-mode .repos_data li
 {
-  background-color: var(--bg);
-  color: var(--txt-color);
+  background-color: var(--secondary-color);
+  color: var(--highlight-color);
   transition: 0.5s;
 }
 .repos_data {
@@ -139,7 +138,6 @@ body.dark-mode .repos_data li
   margin: 15px 10px;
 }
 body.dark-mode .repos_data li a {
-  background-color: var(--txt-color);
-  color: var(--bg);
+  background-color: var(--button-color);
   transition: 0.5s;
 }
