@@ -23,9 +23,11 @@
   }
 }
 :root {
-  --txt-color: #1B263B;
-  --bg: #007BFF;
-  --bg1: #F0F0F0;
+  --background-color: #FFF9C4;
+  --text-color: #000000;
+  --highlight-color: #FF4500;
+  --secondary-text-color: #333333;
+  --border-color: #D3D3D3;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -33,15 +35,18 @@ body {
 body.dark-mode , 
 body.dark-mode header .container nav ul li a
 {
-  background-color: var(--txt-color);
-  color: var(--bg);
+  background-color: var(--text-color);
+  color: var(--highlight-color);
   transition: 0.5s;
 }
 a {
   text-decoration: none;
 }
 header {
-  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 0;
 }
 header .container nav ul {
   list-style: none;
@@ -57,5 +62,5 @@ header .container nav ul li a {
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.9px;
-  color: var(--txt-color);
+  color: var(--text-color);
 }
