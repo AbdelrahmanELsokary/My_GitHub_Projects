@@ -23,14 +23,14 @@
   }
 }
 :root {
-  --background-color: #FFF9C4;
-  --text-color: #000000;
-  --highlight-color: #FF4500;
-  --secondary-text-color: #333333;
-  --border-color: #D3D3D3;
+  --background-color: #F5F5DC;
+  --button-color: #D2B48C;
+  --secondary-color: #FAF3E0;
+  --highlight-color: #5D4037;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
 }
 body.dark-mode , 
 body.dark-mode header .container nav ul li a
@@ -45,7 +45,8 @@ a {
 header {
   position: sticky;
   top: 0;
-  border-bottom: 1px solid var(--border-color);
+  background-color: inherit;
+  border-bottom: 1px solid var(--button-color);
   padding: 15px 0;
 }
 header .container nav ul {
@@ -63,4 +64,82 @@ header .container nav ul li a {
   font-weight: bold;
   letter-spacing: 0.9px;
   color: var(--text-color);
+}
+section .container {
+  text-align: center;
+  padding-top: 30px;
+}
+section .container .user_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding-top: 40px;
+}
+.user img {
+  width: 250px;
+  border-radius: 50%;
+}
+.user h1 {
+  padding: 10px;
+}
+.user a {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--highlight-color);
+}
+.user .bio {
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+}
+.follow {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+}
+.follow span {
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+body.dark-mode .follow span ,
+body.dark-mode .repos_data li span ,
+body.dark-mode .repos_data li
+{
+  background-color: var(--bg);
+  color: var(--txt-color);
+  transition: 0.5s;
+}
+.repos_data {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  flex: 1;
+  flex-wrap: wrap;
+  list-style-position: inside;
+}
+.repos_data li {
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px 0 10px 0;
+  margin: 10px;
+}
+.repos_data li a {
+  display: inline-block;
+  color: var(--secondary-color);
+  background-color: var(--button-color);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 7px 15px;
+  margin: 15px 10px;
+}
+body.dark-mode .repos_data li a {
+  background-color: var(--txt-color);
+  color: var(--bg);
+  transition: 0.5s;
 }
