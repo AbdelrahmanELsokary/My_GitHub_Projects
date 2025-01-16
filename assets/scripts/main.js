@@ -37,7 +37,7 @@ function getData() {
               <li>
               <span>${repostories[i].name}</span>
                 <br> 
-                <a href="${repostories[i].homepage}" target="_blank">View Project</a> 
+                <a href="${repostories[i].homepage}" target="_blank">View Dimo</a> 
                 <a href="${repostories[i].html_url}" target="_blank">View Code</a></li>
               `;
             document.getElementById('repos_data').innerHTML = displayRepos;
